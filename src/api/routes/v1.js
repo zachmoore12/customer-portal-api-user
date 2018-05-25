@@ -1,13 +1,10 @@
 import express from 'express';
-
-// TODO: Add route files
+import userRoutes  from './user';
 
 const router = express.Router();
 
-// TODO: router.use('/users', :userRoutes)
-// TODO: router.use('/auth', :authRoutes)
-
 router.get('/status', (req, result) => result.send('Hello!'));
+router.use('/users', userRoutes);
 
 module.exports = {
 	v1: router

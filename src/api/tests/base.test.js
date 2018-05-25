@@ -3,13 +3,12 @@ const request = require('supertest');
 const sinon = require('sinon');
 
 const app = require('../../../index');
-const sandbox = sinon.createSandbox();
 const { expect } = require('chai');
 const httpStatus = require('http-status');
 
 describe("Basic Routing",  () => {
 	beforeEach(() => {});
-	afterEach(() => sandbox.restore());
+	afterEach(() => {});
 
 	describe('GET /v1/status', () => {
 		it('Should return a 200 response with Hello!', () => {
