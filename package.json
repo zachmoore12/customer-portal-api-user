@@ -1,18 +1,18 @@
 {
   "name": "customer-portal-user-api",
   "version": "1.0.0",
-  "description": "User Authentication API",
+  "description": "User Profile API",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zachmoore12/customer-portal-user-api.git"
+    "url": "git+https://github.com/zachmoore12/customer-portal-api-user.git"
   },
   "author": "Zach Moore",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zachmoore12/customer-portal-user-api/issues"
+    "url": "https://github.com/zachmoore12/customer-portal-api-user/issues"
   },
-  "homepage": "https://github.com/zachmoore12/customer-portal-user-api#readme",
+  "homepage": "https://github.com/zachmoore12/customer-portal-api-user#readme",
   "dependencies": {
     "axios": "^0.18.0",
     "babel-polyfill": "^6.26.0",
