@@ -2,16 +2,12 @@
 
 const bcrypt = require('bcryptjs');
 
-const roles = ['admin', 'owner', 'user'];
-
 // TODO: Mongoose?
 const userSchema = {
 	username: String,
-	password: String,
 	firstName: String,
 	lastName: String,
-	email: String,
-	role: String
+	email: String
 };
 
 const get = (userId) => {
@@ -21,9 +17,7 @@ const get = (userId) => {
 		firstName: 'Leslie',
 		lastName: 'Knope',
 		email: 'lknope@example.dev',
-		username: 'lknope@example.dev',
-		password: 'hashMePassword',
-		role: 'admin'
+		username: 'lknope@example.dev'
 	};
 }
 
@@ -34,6 +28,5 @@ const save = (user) => {
 
 module.exports = {
 	get,
-	save,
-	roles
+	save
 }

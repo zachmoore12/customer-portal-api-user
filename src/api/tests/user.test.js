@@ -25,9 +25,7 @@ describe("User Service",  () => {
 				firstName: 'Leslie',
 				lastName: 'Knope',
 				email: 'lknope@example.dev',
-				username: 'lknope@example.dev',
-				password: 'hashMePassword',
-				role: 'admin'
+				username: 'lknope@example.dev'
 			}
 		];
 	});
