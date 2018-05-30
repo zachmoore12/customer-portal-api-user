@@ -10,14 +10,14 @@ describe("Basic Routing",  () => {
 	beforeEach(() => {});
 	afterEach(() => {});
 
-	describe('GET /v1/status', () => {
-		it('Should return a 200 response with Hello!', () => {
+	describe('GET /v1/healthcheck', () => {
+		it('Should return a 200 response with Healthy', () => {
 			return request(app)
-				.get('/v1/status')
+				.get('/v1/healthcheck')
 				.expect(httpStatus.OK)
 				.then((res) => {
 					const status = res.text;
-					expect(status).to.be.equal('Hello!');
+					expect(status).to.be.equal('Healthy');
 				})
 		})
 	});

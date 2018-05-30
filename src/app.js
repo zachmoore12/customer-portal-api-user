@@ -17,7 +17,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cors());
 app.use(helmet());
 
-app.use('/users/v1', v1);
+app.use('/v1', v1);
 
 app.listen(port, () => {});
 

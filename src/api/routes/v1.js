@@ -3,7 +3,7 @@ import userRoutes  from './user';
 
 const router = express.Router();
 
-router.get('/status', (req, result) => result.send('Hello!'));
+router.get('/healthcheck', (req, result) => result.send('Healthy'));
 router.use('/users', userRoutes);
 
 module.exports = {
